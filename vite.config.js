@@ -1,6 +1,8 @@
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite'; // Importa defineConfig de Vite
 
-// https://vitejs.dev/config/
+import react from '@vitejs/plugin-react';
+
+// Exporta la configuración de Vite
 export default defineConfig({
   plugins: [react()],
   build: {
@@ -8,4 +10,4 @@ export default defineConfig({
       external: ['axios']
     }
   }
-})
+});
